@@ -1,0 +1,154 @@
+/* Header Styling */
+.header {
+  display: grid;
+  grid-template-columns: auto 1fr auto;
+  grid-template-rows: auto auto;
+  align-items: center;
+  padding: 20px;
+  background-color: #003366; /* Navy blue background */
+  color: #FFA500; /* Vibrant orange text */
+  gap: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+}
+
+/* Logo Styling */
+.logo {
+  grid-column: 1 / 2;
+  grid-row: 1 / 2;
+  display: flex;
+  align-items: center;
+}
+.logo h1 {
+  font-family: 'Arial', sans-serif;
+  font-size: 32px; /* Increased font size */
+  font-weight: bold;
+  color: #FFA500; /* Vibrant orange logo */
+  margin: 0; /* Remove default margin */
+  text-transform: uppercase; /* Uppercase for emphasis */
+  letter-spacing: 2px; /* Spacing between letters */
+  transition: transform 0.3s ease; /* Smooth animation */
+}
+.logo h1:hover {
+  transform: scale(1.1); /* Slightly enlarge on hover */
+}
+
+/* Contact Information Styling */
+.contact-info {
+  grid-column: 2 / 3;
+  grid-row: 2 / 3;
+  display: flex;
+  align-items: center; /* Align items vertically */
+  gap: 20px; /* Space between contact details */
+}
+.contact-info p {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  font-family: 'Arial', sans-serif;
+  font-size: 18px; /* Increased font size */
+  color: #FFA500; /* Vibrant orange contact info */
+  transition: transform 0.3s ease; /* Smooth animation */
+}
+.contact-info p:hover {
+  transform: translateX(5px); /* Slide effect on hover */
+}
+.contact-info svg {
+  color: #FFA500; /* Vibrant orange icons */
+  font-size: 24px; /* Larger icon size */
+  transition: transform 0.3s ease; /* Smooth animation */
+}
+.contact-info svg:hover {
+  transform: scale(1.2); /* Enlarge icon on hover */
+}
+
+/* Navigation Menu Styling */
+.nav {
+  grid-column: 2 / 3;
+  grid-row: 1 / 2;
+  display: flex;
+  justify-content: center;
+}
+.nav-links {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  gap: 20px; /* Increased spacing between links */
+}
+.nav-link {
+  text-decoration: none;
+  color: #FFA500; /* Vibrant orange navigation links */
+  font-family: 'Arial', sans-serif;
+  font-size: 20px; /* Increased font size */
+  transition: color 0.3s ease, transform 0.3s ease; /* Smooth hover effect */
+}
+.nav-link:hover {
+  color: #FFD700; /* Gold hover effect */
+  transform: scale(1.1); /* Slightly enlarge on hover */
+}
+
+/* Social Media Icons Styling */
+.social-media {
+  grid-column: 3 / 4;
+  grid-row: 1 / 2;
+  display: flex;
+  gap: 20px; /* Increased spacing between icons */
+}
+.social-icon {
+  font-size: 32px; /* Larger icon size */
+  color: #FFA500; /* Vibrant orange icons */
+  text-decoration: none;
+  transition: transform 0.3s ease, color 0.3s ease; /* Smooth hover effect */
+}
+.social-icon:hover {
+  color: #FFD700; /* Gold hover effect */
+  transform: scale(1.2); /* Enlarge icon on hover */
+}
+
+/* Call-to-Action Button Styling */
+.cta-button {
+  grid-column: 3 / 4;
+  grid-row: 2 / 3;
+  padding: 15px 30px; /* Increased padding */
+  background-color: #FFA500; /* Vibrant orange button */
+  color: #003366; /* Navy blue text */
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-family: 'Arial', sans-serif;
+  font-size: 20px; /* Increased font size */
+  font-weight: bold;
+  transition: background-color 0.3s ease, transform 0.3s ease; /* Smooth hover effect */
+}
+.cta-button:hover {
+  background-color: #FF8C00; /* Darker orange on hover */
+  transform: scale(1.1); /* Slightly enlarge on hover */
+}
+/* Hover Animation for Navigation Links */
+.nav-link:hover {
+  color: #FFD700 !important; /* Gold hover effect */
+  transform: scale(1.1);
+  transition: transform 0.3s ease, color 0.3s ease;
+}
+
+/* Hover Animation for Social Media Icons */
+.social-icon:hover {
+  color: #FFD700 !important; /* Gold hover effect */
+  transform: scale(1.2);
+  transition: transform 0.3s ease, color 0.3s ease;
+}
+
+
+/* Logo Image Styling */
+.logo-img {
+  max-height: 40px; /* Set a maximum height for the logo */
+  width: auto; /* Maintain aspect ratio */
+  border-radius: 5px; /* Add rounded corners for a polished look */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Subtle shadow for depth */
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+  .logo-img {
+    max-height: 30px; /* Reduce logo size on smaller screens */
+  }
+}
