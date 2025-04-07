@@ -1,0 +1,166 @@
+/* About.css */
+.about-section {
+    background: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%);
+    min-height: 100vh;
+    padding: 100px 0;
+  }
+  
+  .animate-title {
+    font-family: 'Montserrat', sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    background: linear-gradient(to right, #00c4cc, #ffffff);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    text-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    animation: fadeInDown 1.2s ease-out;
+  }
+  
+  .card {
+    overflow: hidden;
+    transition: transform 0.4s ease, box-shadow 0.4s ease;
+  }
+  
+  .card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4) !important;
+  }
+  
+  .bg-overlay {
+    background: rgba(0, 0, 0, 0.5); /* Dark overlay for contrast */
+    transition: background 0.3s ease;
+  }
+  
+  .card:hover .bg-overlay {
+    background: rgba(0, 0, 0, 0.7); /* Darker on hover */
+  }
+  
+  .card-img-top {
+    height: 400px;
+    object-fit: cover;
+    transition: transform 0.5s ease;
+  }
+  
+  .card:hover .card-img-top {
+    transform: scale(1.1);
+  }
+  
+  .card-title {
+    font-size: 2rem;
+    text-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+  }
+  
+  .lead {
+    font-size: 1.2rem;
+    line-height: 1.8;
+  }
+  
+  .text-primary {
+    color: #00c4cc !important; /* Vibrant cyan */
+  }
+  
+  /* Feature Card Styling */
+  .bg-dark {
+    background: #1e272e !important;
+  }
+  
+  .fs-1 {
+    transition: transform 0.3s ease;
+  }
+  
+  .col-md-3:hover .fs-1 {
+    transform: scale(1.2);
+  }
+  
+  .col-md-3 h5 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    color: #fff;
+  }
+  
+  .col-md-3 p {
+    color: #ccc;
+    font-size: 0.95rem;
+  }
+  
+  /* Animations */
+  .animate-card {
+    animation: fadeInUp 1s ease-out;
+  }
+  
+  .delay-1 {
+    animation-delay: 0.3s;
+  }
+  
+  .delay-2 {
+    animation-delay: 0.6s;
+  }
+  
+  @keyframes fadeInDown {
+    0% {
+      opacity: 0;
+      transform: translateY(-50px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  @keyframes fadeInUp {
+    0% {
+      opacity: 0;
+      transform: translateY(50px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  /* Responsive Adjustments */
+  @media (max-width: 768px) {
+    .about-section {
+      padding: 60px 0;
+    }
+  
+    .display-3 {
+      font-size: 2.5rem;
+    }
+  
+    .card-title {
+      font-size: 1.8rem;
+    }
+  
+    .lead {
+      font-size: 1.1rem;
+    }
+  
+    .card-img-top {
+      height: 300px;
+    }
+  }
+  
+  @media (max-width: 576px) {
+    .about-section {
+      padding: 40px 15px;
+    }
+  
+    .display-3 {
+      font-size: 2rem;
+    }
+  
+    .card-title {
+      font-size: 1.5rem;
+    }
+  
+    .lead {
+      font-size: 1rem;
+    }
+  
+    .col-md-3 {
+      flex: 0 0 50%;
+      max-width: 50%;
+    }
+  }

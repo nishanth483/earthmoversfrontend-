@@ -1,0 +1,147 @@
+.services-section {
+  background-color: #f8f9fa;
+  padding: 60px 0;
+}
+
+.service-card {
+  border-radius: 10px;
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  animation: slide-up 0.8s ease-out forwards;
+  opacity: 0;
+}
+
+@keyframes slide-up {
+  0% {
+    transform: translateY(50px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.service-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.service-image {
+  position: relative;
+  height: 300px;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  transition: transform 0.5s ease, filter 0.3s ease;
+}
+
+.service-card:hover .service-image {
+  transform: scale(1.05);
+  filter: brightness(90%);
+}
+
+.service-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.3); /* Slightly darker overlay for readability */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 20px;
+  transition: background 0.3s ease;
+}
+
+.service-card:hover .service-overlay {
+  background: rgba(0, 0, 0, 0.5);
+}
+
+.service-title {
+  color: #fff;
+  font-size: 24px;
+  margin-bottom: 15px;
+  transition: transform 0.3s ease;
+}
+
+.service-description {
+  color: #fff;
+  font-size: 16px;
+  opacity: 0.9;
+  transform: translateY(10px);
+  transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.service-card:hover .service-title {
+  transform: scale(1.1);
+}
+
+.service-card:hover .service-description {
+  transform: translateY(0);
+  opacity: 1;
+}
+
+/* Intro Text Styling */
+.intro-text {
+  margin-bottom: 60px;
+}
+
+.intro-title {
+  font-size: 48px;
+  color: #333;
+  font-weight: bold;
+}
+
+.intro-description {
+  font-size: 18px;
+  color: #666;
+  max-width: 800px;
+  margin: 0 auto;
+  line-height: 1.6;
+}
+
+.animate-fade-in {
+  animation: fade-in 1s ease-out forwards;
+}
+
+@keyframes fade-in {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+.animate-slide-up {
+  animation: slide-up-text 1s ease-out forwards;
+}
+
+@keyframes slide-up-text {
+  0% { transform: translateY(30px); opacity: 0; }
+  100% { transform: translateY(0); opacity: 1; }
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .service-image {
+    height: 250px;
+  }
+
+  .service-title {
+    font-size: 20px;
+  }
+
+  .service-description {
+    font-size: 14px;
+  }
+
+  .intro-title {
+    font-size: 36px;
+  }
+
+  .intro-description {
+    font-size: 16px;
+  }
+}
